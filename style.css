@@ -11,3 +11,16 @@ table{
 .tableLeft{
 	text-align: left;
 }
+
+.gabungan{
+	text-align: center;
+	font-family: arial;
+}
+
+.gabungan h2{
+	color: red;
+}
+
+.gabungan h3{
+	color: green;
+}
