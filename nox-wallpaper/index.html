@@ -12,29 +12,41 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      background-color: #111;
     }
   </style>
 </head>
 <body>
   <script>
-    // Wallhaven API with specific tags
+    const API_KEY = 'f9suYQOMM2PltcS81vo0RQ3bOlrNHGdi';
     const tags = ['cyberpunk', 'fantasy', 'anime', 'sci-fi', 'mecha', 'game'];
-    const randomTag = tags[Math.floor(Math.random() * tags.length)];
+    const tag = tags[Math.floor(Math.random() * tags.length)];
 
-    fetch(`https://wallhaven.cc/api/v1/search?q=${randomTag}&sorting=random&categories=111&purity=100&atleast=1600x900&ratios=16x9`)
-      .then(res => res.json())
-      .then(data => {
-        if (data.data && data.data.length > 0) {
-          const imageUrl = data.data[0].path;
-          document.body.style.backgroundImage = `url(${imageUrl})`;
-        } else {
-          document.body.style.backgroundColor = '#222';
-        }
-      })
-      .catch(err => {
-        console.error("Failed to load image:", err);
-        document.body.style.backgroundColor = '#333';
-      });
+    // Randomly choose between Sketchy (010) and NSFW (001)
+    const purities = ['010', '001'];
+    const purity = purities[Math.floor(Math.random() * purities.length)];
+
+    const url = `https://wallhaven.cc/api/v1/search?q=${tag}&sorting=random&categories=010&purity=${purity}&atleast=1600x900&ratios=16x9`;
+
+    fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': API_KEY
+      }
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.data && data.data.length > 0) {
+        const imageUrl = data.data[0].path;
+        document.body.style.backgroundImage = `url(${imageUrl})`;
+      } else {
+        document.body.style.backgroundColor = '#222';
+      }
+    })
+    .catch(err => {
+      console.error('Image load failed:', err);
+      document.body.style.backgroundColor = '#333';
+    });
   </script>
 </body>
 </html>
