@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nox Startup Wallpaper</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Wallhaven API with specific tags
+    const tags = ['cyberpunk', 'fantasy', 'anime', 'sci-fi', 'mecha', 'game'];
+    const randomTag = tags[Math.floor(Math.random() * tags.length)];
+
+    fetch(`https://wallhaven.cc/api/v1/search?q=${randomTag}&sorting=random&categories=111&purity=100&atleast=1600x900&ratios=16x9`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.data && data.data.length > 0) {
+          const imageUrl = data.data[0].path;
+          document.body.style.backgroundImage = `url(${imageUrl})`;
+        } else {
+          document.body.style.backgroundColor = '#222';
+        }
+      })
+      .catch(err => {
+        console.error("Failed to load image:", err);
+        document.body.style.backgroundColor = '#333';
+      });
+  </script>
+</body>
+</html>
