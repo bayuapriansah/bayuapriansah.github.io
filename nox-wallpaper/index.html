@@ -18,35 +18,19 @@
 </head>
 <body>
   <script>
-    const API_KEY = 'f9suYQOMM2PltcS81vo0RQ3bOlrNHGdi';
-    const tags = ['cyberpunk', 'fantasy', 'anime', 'sci-fi', 'mecha', 'game'];
-    const tag = tags[Math.floor(Math.random() * tags.length)];
-
-    // Randomly choose between Sketchy (010) and NSFW (001)
-    const purities = ['010', '001'];
-    const purity = purities[Math.floor(Math.random() * purities.length)];
-
-    const url = `https://wallhaven.cc/api/v1/search?q=${tag}&sorting=random&categories=010&purity=${purity}&atleast=1600x900&ratios=16x9`;
-
-    fetch(url, {
-      headers: {
-        'Accept': 'application/json',
-        'Authorization': API_KEY
-      }
-    })
-    .then(res => res.json())
-    .then(data => {
-      if (data.data && data.data.length > 0) {
-        const imageUrl = data.data[0].path;
-        document.body.style.backgroundImage = `url(${imageUrl})`;
-      } else {
-        document.body.style.backgroundColor = '#222';
-      }
-    })
-    .catch(err => {
-      console.error('Image load failed:', err);
-      document.body.style.backgroundColor = '#333';
-    });
+    fetch("https://wallhaven.bayuapriansah10.workers.dev/")
+      .then(res => res.json())
+      .then(data => {
+        if (data.image) {
+          document.body.style.backgroundImage = `url(${data.image})`;
+        } else {
+          document.body.style.backgroundColor = '#222';
+        }
+      })
+      .catch(err => {
+        console.error("Image load failed:", err);
+        document.body.style.backgroundColor = '#333';
+      });
   </script>
 </body>
 </html>
