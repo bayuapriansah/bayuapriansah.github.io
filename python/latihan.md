@@ -1,3 +1,7 @@
+---
+layout: default
+title: Latihan Python - Dikumpul Minggu Depan
+---
 # **Tugas Untuk Minggu Depan**
 
 ---
