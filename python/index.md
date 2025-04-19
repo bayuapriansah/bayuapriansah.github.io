@@ -366,3 +366,30 @@ while True:
 ```
 
 ---
+### 🎯 Tugas Kelompok (Dikumpulkan Tetap Mandiri)
+
+1. Buatlah program menu Python yang dapat melakukan:
+   - Menambahkan data kategori dan produk
+   - Tambahkan 5 data kategori tambahan (total menjadi 8 kategori). Gunakan nama kategori yang belum ada di data sebelumnya.
+   - Tambahkan 5 produk tambahan (total menjadi 10 produk), dan pastikan produk tersebar di beberapa kategori berbeda.
+   - Menampilkan produk lengkap dengan nama kategori menggunakan INNER JOIN
+   - Menampilkan semua produk termasuk yang tidak memiliki kategori menggunakan LEFT JOIN
+2. Tampilkan daftar produk lengkap dengan nama kategori-nya menggunakan **INNER JOIN**.
+   - INNER JOIN digunakan karena kita ingin menampilkan produk yang **memiliki kategori valid** saja.
+   - Query SQL yang digunakan:
+     ```sql
+     SELECT produk.nama, produk.harga, kategori.nama_kategori
+     FROM produk
+     INNER JOIN kategori ON produk.kategori_id = kategori.id;
+     ```
+3. Uji FOREIGN KEY dengan cara menghapus satu kategori yang masih digunakan oleh produk. Catat apakah muncul error terkait integritas relasi.
+4. Tambahkan satu produk tanpa kategori (`kategori_id = NULL`), lalu tampilkan semua produk dengan query **LEFT JOIN**:
+   ```sql
+   SELECT produk.nama, produk.harga, kategori.nama_kategori
+   FROM produk
+   LEFT JOIN kategori ON produk.kategori_id = kategori.id;
+   ```
+   - Produk tanpa kategori akan tetap tampil, dan kolom `nama_kategori` akan berisi NULL.
+5. Kirim **Video Rekaman Singkat dari semua langkah di atas** (langkah 1 sampai 6), baik kode Python maupun hasil output-nya, ke Google Classroom sebagai bukti pengerjaan tugas.
+
+
