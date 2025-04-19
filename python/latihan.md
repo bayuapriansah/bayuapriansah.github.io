@@ -49,20 +49,27 @@ title: Latihan Python - Dikumpul Minggu Depan
 
 ### 📌 **Part 7: Relational Database & JOIN (MySQL + Python)**
 
-13. Buat database dan tabel relasi `kategori` dan `produk` di MySQL dengan struktur sebagai berikut:
-    - `kategori(id, nama_kategori)`
-    - `produk(id, nama, harga, kategori_id)` dengan FOREIGN KEY ke tabel `kategori`
-14. Isi tabel kategori dengan 8 data dan produk dengan 10 data.
+13. Buat database bernama `perpustakaan` yang memiliki 4 tabel dengan relasi sebagai berikut:
+    - `anggota(id, nama, alamat)`
+    - `buku(id, judul, penulis)`
+    - `peminjaman(id, anggota_id, tanggal_pinjam)` dengan FOREIGN KEY ke tabel `anggota`
+    - `detail_peminjaman(id, peminjaman_id, buku_id)` dengan FOREIGN KEY ke tabel `peminjaman` dan `buku`
+
+14. Isi tabel `anggota` dengan minimal 5 data, `buku` dengan 8 data, `peminjaman` dengan 3 data, dan `detail_peminjaman` dengan 6 data.
+
 15. Buat program Python yang:
     - Menyambungkan ke database MySQL
-    - Menambahkan data kategori dan produk via input
-    - Menampilkan daftar kategori
-    - Menampilkan daftar produk beserta nama kategori-nya dengan JOIN
+    - Menambahkan data ke dalam tabel `anggota`, `buku`, dan `peminjaman` via input
+    - Menampilkan daftar semua anggota
+    - Menampilkan daftar buku yang dipinjam, beserta nama anggota dan tanggal pinjam, menggunakan JOIN antar keempat tabel
+
 16. Tampilkan hasil query menggunakan:
-    - **INNER JOIN**: hanya produk yang punya kategori
-    - **LEFT JOIN**: semua produk termasuk yang tidak punya kategori
-17. Tambahkan 1 produk yang tidak punya kategori (`kategori_id = NULL`) dan tunjukkan hasil LEFT JOIN
-18. Hapus salah satu kategori yang masih digunakan produk, lalu catat error yang muncul (uji FOREIGN KEY constraint)
+    - **INNER JOIN**: hanya buku yang benar-benar dipinjam oleh anggota
+    - **LEFT JOIN**: semua peminjaman termasuk yang tidak punya detail buku
+
+17. Tambahkan satu peminjaman tanpa detail peminjaman dan tunjukkan hasil LEFT JOIN untuk kasus tersebut.
+
+18. Coba hapus satu data anggota yang masih memiliki data peminjaman, lalu catat error yang muncul (uji FOREIGN KEY constraint)
 
 ---
 
@@ -77,3 +84,4 @@ title: Latihan Python - Dikumpul Minggu Depan
 
 Selamat mengerjakan dan tetap semangat belajar Python & MySQL
 
+---
