@@ -1,4 +1,4 @@
-**Daily Sync – Thu 10 Jul: Key Outcomes**
+**Daily Sync – Thu 10 Jul**
 
 * **Handbook fixes**
  @Janani
