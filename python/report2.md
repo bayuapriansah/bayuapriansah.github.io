@@ -11,7 +11,7 @@
   * Virtual Exchange timeline to a single calendar view starting **Week 1**; team-formation milestones added per week.
   * Add “What you need” box (laptop, internet, etc.). — @Janani @Russell
   * Insert permanent Discord link and nickname rule. — @Bayu
-  * **Next step:** @Russell compiles comment doc today; @Janani & @Suprina start revisions.
+  * **Next step:** @Russell will amend the VE schedule & compiles comment doc today; @Janani & @Suprina start revisions.
 
 * **Zoom upgrade**
 
