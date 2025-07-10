@@ -9,7 +9,6 @@
   * Cover & TOC need unified fonts and stronger climate-tech visuals.
   * Funnel graphic: add icons, colour-blind-friendly palette, finish with a globe/stage at “Global Showcase.”
   * Virtual Exchange timeline to a single calendar view starting **Week 1**; team-formation milestones added per week.
-  * Move Mentoring / Prototyping / Showcase timeline to its own page.
   * Add “What you need” box (laptop, internet, etc.). — @Janani @Russell
   * Insert permanent Discord link and nickname rule. — @Bayu
   * **Next step:** @Russell compiles comment doc today; @Janani & @Suprina start revisions.
