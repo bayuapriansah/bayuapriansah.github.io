@@ -19,7 +19,7 @@
    3. Do-One activities via existing Google Form; Jeevan to post timeline in Discord group.
    4. Calendar invites sent – need clearer session titles; convert links to webinar once license sorted.
 6. *Zoom platform*
-   1. > 300 expected ⇒ webinar license required.
+   1. 300 expected ⇒ webinar license required.
    2. Jeevan research price Zoom costs and brief team at daily sync.
 7. *Discord onboarding & engagement*
    1. Server built: channels – *#announcements (read-only), #help-desk, #materials* per FT session.
