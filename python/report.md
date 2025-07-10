@@ -22,6 +22,7 @@
    1. 300 expected ⇒ webinar license required.
    2. @Jeevan research price Zoom costs and brief team at daily sync.
 7. *Discord onboarding & engagement*
+   @bayu
    1. Server built: channels – *#announcements (read-only), #help-desk, #materials* per FT session.
    2. All students (online & in-person) join from day 1 – handbook QR + in-session scan.
    3. Naming rule = real names; reiterated in handbook, Discord welcome page, and kickoff talk.
