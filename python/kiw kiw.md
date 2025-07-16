@@ -23,6 +23,9 @@
   * **Team-formation flow**:
     1. Dedicated Discord channels for idea-pitching & matchmaking (organic).
     2. Google Form for team submission opens 13 Sep, closes 27 Sep.
+  * **Kickoff and Briefing**
+    * *VE Kickoff* – @Heet
+    * *Mentoring & Prototyping Briefing for selected teams* – @Izbat and @jeevan
   * **Cultural sessions – owners**
     * *Youth Culture* – @Theresa
     * *Food & Climate* – @Bayu
