@@ -33,7 +33,7 @@
    7. Enable reactions in chat for quick participant feedback.
    8. Bayu & Heet to join upcoming Zoom sessions to familiarize with webinar tools.
 
-5. **Prototyping, Deployment, and Showcase Budget**
+5. **Prototyping, Deployment, and Showcase Budget** - @heet
    1. Total Estimations (USD):
       * Prototyping: \$15K (30 teams @ \$500, milestone-based disbursement).
       * Deployment: \~\$35K (travel-heavy or remote deployments, 7:3 split).
@@ -42,7 +42,7 @@
       * Visa & travel insurance must be included.
       * Double flight estimates to account for rising costs & peak travel.
       * Local teams to validate real ticket prices (e.g. Indonesia to SG).
-   3. Russell to adjust showcase date & buffer timeline based on team confirmation (\~Dec).
+   3. Consideration for Heet to factor in price fluctuations closer to showcase date.
    4. Delivery of IoT kits: To be handled by admin teams, not via cash disbursement.
    5. Cash disbursement discouraged to avoid tax/legal complications.
 
@@ -55,7 +55,7 @@
 
 7. **Follow-ups & Assignments**
    1. Heet to draft external org masterclass outreach template by Friday.
-   2. Leo to mock up basic visualization of logos/themes.
+   2. Leo to draft visual of org-to-problem statement for update deck.
    3. Bayu to assist Janio in preparing collaterals for Jogja + upcoming Indonesia launches.
    4. Heet & Jeevan to align on Zoom tech prep and prototyping disbursement flow.
    5. Team to finalize showcase travel budget with updated flight, insurance, and visa costs.
