@@ -12,15 +12,14 @@
    2. Avoid inflating expectations—align slides with realistic confirmed figures.
    3. Include logos of confirmed orgs + title-only list of problem statements (grouped by themes).
    4. Clarification: Must tie each statement to a real-world org (no purely theoretical owners).
-   5. Suggestion: Prepare 3-tiered view: confirmed, connected-not-confirmed, and unadopted but real-world issues.
-   6. Leo to assist Russell in visualizing ownership/themes via color-coded graphics.
+   5. Leo to assist Russell in visualizing ownership/themes via color-coded graphics.
 
 3. **Masterclass & Virtual Exchange Planning**
    1. Format: Split between cultural sessions (internal-led) and masterclasses (external orgs).
-   2. Kickoff: First session on Oct 4, led by Bayu & Jeevan.
+   2. Kickoff: First session on Sept 9, led by heet.
    3. Scheduling: Tues/Thurs (evenings), weekends (afternoons) for 4 weeks.
    4. Heet to draft outreach template for masterclass orgs (objectives, audience, scope).
-   5. Backup plan: If orgs unavailable, internal experts (e.g. Anushka, Avin, Wani) may run sessions.
+   5. Backup plan: If orgs unavailable, internal experts (e.g. Anushka, Zeeshan) may run sessions.
    6. Emphasis: Ensure session content doesn’t overlap with foundational training; focus on case-based dialogue.
    7. Suggestion: Use "Ask Me Anything" format or guided Q\&A for richer engagement.
       
