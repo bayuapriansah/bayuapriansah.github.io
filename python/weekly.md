@@ -1,7 +1,3 @@
-Here’s the **consolidated discussion points** from the **Meta Climate Tech Project - Weekly Sync (Jul 17, 2025)** in the same style and structure as the example you provided:
-
----
-
 ### Weekly Sync Thurs 7/17:
 
 1. **Update Deck for Meta (Gavin)**
