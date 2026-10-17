@@ -1,244 +1,356 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Site Pribadi - Yak Di cek Dulu Mana tau Bermanfaat</title>
-  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
-
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayu Apriansah — Catatan Pemrograman Web</title>
+  <meta name="description" content="Catatan kuliah Pemrograman Web: HTML, CSS, jQuery, Bootstrap, dan PHP.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2410c'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='white' text-anchor='middle'%3EBA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
 </head>
 <body>
-<xmp>
-###########################################################################################################################################################################################
-## Nama   : Bayu Apriansah         ########################################################################################################################################################
-## NPM    : 17351117               ########################################################################################################################################################
-## Matkul : Pemprograman web       ########################################################################################################################################################
-###########################################################################################################################################################################################
 
-HTML adalah singkatan dari Hypertext Markup Language. HTML memungkinkan seorang user untuk membuat dan menyusun bagian paragraf, heading, link atau tautan, dan blockquote untuk halaman
-web dan aplikasi.HTML bukanlah bahasa pemrograman, dan itu berarti HTML tidak punya kemampuan untuk membuat fungsionalitas yang dinamis. 
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="mark">BA</span> <span class="name">Bayu Apriansah</span></a>
+    <nav class="nav">
+      <a href="#dasar" class="active">Materi</a>
+      <a href="#kelulusan">Tabel</a>
+      <a href="transkrip.html">Transkrip</a>
+      <a href="https://github.com/bayuapriansah" target="_blank" rel="noopener">GitHub</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Ganti tema">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
 
-CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML. CSS berfungsi untuk memisahkan konten dari
-tampilan visualnya di situs.
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Catatan Kuliah · Pemrograman Web</div>
+      <h1>Halo, saya Bayu Apriansah.</h1>
+      <p class="lead">Kumpulan catatan dan latihan dari mata kuliah Pemrograman Web: dasar HTML, CSS, jQuery, Bootstrap, sampai PHP. Yak, dicek dulu — mana tau bermanfaat.</p>
+      <div class="meta">
+        <span class="chip"><span class="dot"></span>NPM <b>17351117</b></span>
+        <span class="chip"><span class="dot teal"></span>Matkul <b>Pemrograman Web</b></span>
+        <a class="chip" href="transkrip.html"><span class="dot"></span>Lihat <b>Transkrip Nilai</b> →</a>
+      </div>
+    </div>
+  </section>
 
-jQuery adalah Javascript Library atau kumpulan kode/fungsi Javascript yang dulunya harus dibuat manual oleh user, tetapi sekarang cukup dipanggil/dijalankan dengan mudah seperti Fade In,
-FadeOut, Slide In,Slide Show, dll.
+  <!-- 01 Dasar web -->
+  <section class="section" id="dasar">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="num">01</span>
+        <div>
+          <h2>Dasar Web</h2>
+          <p>Tiga bahan pokok sebuah halaman web.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3><span class="badge">&lt;/&gt;</span> HTML</h3>
+          <p>HTML adalah singkatan dari <em>Hypertext Markup Language</em>. HTML memungkinkan seorang user untuk membuat dan menyusun bagian paragraf, heading, link atau tautan, dan blockquote untuk halaman web dan aplikasi.</p>
+          <p>HTML bukanlah bahasa pemrograman, dan itu berarti HTML tidak punya kemampuan untuk membuat fungsionalitas yang dinamis.</p>
+        </article>
+        <article class="card">
+          <h3><span class="badge teal">{ }</span> CSS</h3>
+          <p>CSS adalah bahasa <em>Cascading Style Sheet</em> dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML.</p>
+          <p>CSS berfungsi untuk memisahkan konten dari tampilan visualnya di situs.</p>
+        </article>
+        <article class="card">
+          <h3><span class="badge">$</span> jQuery</h3>
+          <p>jQuery adalah <em>JavaScript Library</em>, kumpulan kode/fungsi JavaScript yang dulunya harus dibuat manual oleh user, tetapi sekarang cukup dipanggil dengan mudah seperti Fade In, Fade Out, Slide In, Slide Show, dll.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-###########################################################################################################################################################################################
+  <!-- 02 Bootstrap container -->
+  <section class="section" id="container">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="num">02</span>
+        <div>
+          <h2>Bootstrap Container</h2>
+          <p>Wadah untuk semua elemen grid di Bootstrap.</p>
+        </div>
+      </div>
+      <p class="intro">Container merupakan wadah yang digunakan pada framework Bootstrap untuk menampung semua elemen Grid System atau elemen lainnya dari framework Bootstrap. Ada dua jenis container: <code>.container</code> dengan lebar tetap di tiap breakpoint, dan <code>.container-fluid</code> yang selalu memenuhi lebar layar.</p>
+      <div class="two">
+        <div class="code">
+          <div class="bar"><span>.container</span><button class="copy" type="button">Salin</button></div>
+<pre><span class="t">&lt;div</span> <span class="a">class</span>=<span class="s">"container"</span><span class="t">&gt;</span>
+  <span class="t">&lt;h1&gt;</span>Halaman pertama belajar Bootstrap<span class="t">&lt;/h1&gt;</span>
+  <span class="t">&lt;p&gt;</span>hallo. .
+  ini adalah halaman pertamaku menggunakan bootstrap<span class="t">&lt;/p&gt;</span>
+<span class="t">&lt;/div&gt;</span></pre>
+        </div>
+        <div class="code">
+          <div class="bar"><span>.container-fluid</span><button class="copy" type="button">Salin</button></div>
+<pre><span class="t">&lt;div</span> <span class="a">class</span>=<span class="s">"container-fluid"</span><span class="t">&gt;</span>
+  <span class="t">&lt;h1&gt;</span>Halaman pertama belajar Bootstrap<span class="t">&lt;/h1&gt;</span>
+  <span class="t">&lt;p&gt;</span>hallo. .
+  ini adalah halaman pertamaku menggunakan bootstrap<span class="t">&lt;/p&gt;</span>
+<span class="t">&lt;/div&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
 
-Container merupakan wadah yang digunakan pada framework bootstrap untuk menampung semua element Grid sistem atau element lainnya dari Framework Bootstrap
+  <!-- 03 jQuery effect -->
+  <section class="section" id="effect">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="num">03</span>
+        <div>
+          <h2>jQuery Effect</h2>
+          <p>Menampilkan, menyembunyikan, dan menganimasikan elemen.</p>
+        </div>
+      </div>
+      <p class="intro">Dalam jQuery ada istilah <em>Effect</em>, yaitu sesuatu mengenai menampilkan dan menyembunyikan suatu elemen, menggerakkan elemen, dan menganimasikan elemen. Ada tiga jenis effect:</p>
+      <div class="grid">
+        <article class="card">
+          <h3><span class="badge">1</span> Effect Fade</h3>
+          <p>Digunakan untuk menghilangkan atau menampilkan elemen secara perlahan, biasa digunakan untuk transisi sebuah objek dengan objek lain.</p>
+          <ul>
+            <li><code>fadeIn()</code></li>
+            <li><code>fadeOut()</code></li>
+            <li><code>fadeTo()</code></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3><span class="badge">2</span> Effect Slide</h3>
+          <p>Digunakan untuk menghilangkan atau menampilkan elemen seperti membuka/menutup sesuatu.</p>
+          <ul>
+            <li><code>slideUp()</code></li>
+            <li><code>slideDown()</code></li>
+            <li><code>slideToggle()</code></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3><span class="badge">3</span> Effect Animate</h3>
+          <p>Digunakan untuk menggerakkan atau menganimasikan suatu elemen dengan properti CSS yang kita tentukan sendiri.</p>
+          <ul>
+            <li><code>animate()</code></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-Ada 2 Jenis Container yaitu:
+  <!-- 04 Tabel kelulusan -->
+  <section class="section" id="kelulusan">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="num">04</span>
+        <div>
+          <h2>Tabel Penentuan Kelulusan</h2>
+          <p>Latihan <code>rowspan</code> dan <code>colspan</code> pada tabel HTML.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="tbl">
+          <thead>
+            <tr><th colspan="6">Penentuan Kelulusan</th></tr>
+            <tr>
+              <th rowspan="2">IPK</th>
+              <th rowspan="2">Pengalaman Kerja</th>
+              <th colspan="3">Nilai Ujian</th>
+              <th rowspan="2">Hasil</th>
+            </tr>
+            <tr>
+              <th>Nilai Ujian</th>
+              <th>Psikotes</th>
+              <th>Wawancara</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>&le; 3</td><td>Ada</td><td>&le; 7</td><td>&le; 7</td><td class="left">Baik</td><td class="left"><span class="pill ok">Lulus</span></td></tr>
+            <tr><td>&le; 3</td><td>Tidak Ada</td><td>&le; 7</td><td>&le; 7</td><td class="left">Baik</td><td class="left"><span class="pill ok">Lulus</span></td></tr>
+            <tr><td>&le; 2.7</td><td>Ada</td><td>&le; 7</td><td>&le; 7</td><td class="left">Baik</td><td class="left"><span class="pill ok">Lulus</span></td></tr>
+            <tr><td>&le; 2.7</td><td>Tidak Ada</td><td>&le; 7</td><td>&le; 7</td><td class="left">Baik</td><td class="left"><span class="pill warn">Cadangan</span></td></tr>
+            <tr><td colspan="5" class="left">Selain dari nilai di atas</td><td class="left"><span class="pill no">Tidak Lulus</span></td></tr>
+          </tbody>
+        </table>
+      </div>
 
-container:
-
-<div class="container">
-<h1>Halaman pertama belajar Bootstrap</h1> <p>hallo. .
-ini adalah halaman pertamaku menggunakan bootstrap</p>
-</div>
-
-container-fluid
-
-<div class="container-fluid">
-<h1>Halaman pertama belajar Bootstrap</h1> <p>hallo. .
-ini adalah halaman pertamaku menggunakan bootstrap</p>
-</div>
-
-###########################################################################################################################################################################################
-
-Dalam jQuery ada istilah Effect, yaitu sesuatu mengenai menampilkan dan menyembunyikan suatu elemen, menggerakan elemen dan menganimasikan elemen.
-Ada 3 Effect
-1.Effect Fade
-Digunakan untuk menghilangkan atau menampilkan elemen secara perlahan, biasa digunakan untuk transisi sebuah objek dengan objek lain
-Effect Fade memiliki 3 Jenis:
-a.fadeIn
-b.fadeOut
-c.fadeTo
-
-2.Effect Slide
-Digunakan untuk menghilangkan atau menampilkan elemen seperti membuka/menutup sesuatu
-Effect Slide memiliki 3 Jenis:
-a.slideUp
-b.slideDown
-c.slideToggle
-
-3.Effect Animate
-Digunakan untuk menggerakkan/menganimasikan suatu elemen.
-
-###########################################################################################################################################################################################
-</xmp>
-
-<pre>
-<table border="1">
-  <tr>
-    <th colspan="6">PENENTUAN KELULUSAN</th>
-  </tr>
-  <tr>
-    <td rowspan="2" class="tableBottom">IPK</td>
-    <td rowspan="2" class="tableBottom">Pengalaman Kerja</td>
-    <td colspan="3">Nilai Ujian</td>
-    <td rowspan="2" class="tableBottom">Hasil</td>
-  </tr>
-  <tr>
-    <td>Nilai Ujian</td>
-    <td>Psikotes</td>
-    <td>Wawancara</td>
-  </tr>
-  <tr>
-    <td><=3</td>
-    <td>Ada</td>
-    <td><=7</td>
-    <td><=7</td>
-    <td class="tableLeft">Baik</td>
-    <td class="tableLeft">Lulus</td>
-  </tr>
-  <tr>
-    <td><=3</td>
-    <td>Tidak Ada</td>
-    <td><=7</td>
-    <td><=7</td>
-    <td class="tableLeft">Baik</td>
-    <td class="tableLeft">Lulus</td>
-  </tr>
-  <tr>
-    <td><=2.7</td>
-    <td>Ada</td>
-    <td><=7</td>
-    <td><=7</td>
-    <td class="tableLeft">Baik</td>
-    <td class="tableLeft">Lulus</td>
-  </tr>
-  <tr>
-    <td><=2.7</td>
-    <td>Tidak Ada</td>
-    <td><=7</td>
-    <td><=7</td>
-    <td class="tableLeft">Baik</td>
-    <td class="tableLeft">Cadangan</td>
-  </tr>
-  <tr>
-    <td colspan="5">Selain dari nilai diatas</td>
-    <td class="tableLeft">Tidak Lulus</td>
-  </tr>
-</table>
-###########################################################################################################################################################################################
-</pre>
-<xmp>
-Hasil Ada Dibawah Ini
-<table border="1">
-  <tr>
-    <th colspan="6">PENENTUAN KELULUSAN</th>
-  </tr>
-  <tr>
-    <td rowspan="2" class="tableBottom">IPK</td>
-    <td rowspan="2" class="tableBottom">Pengalaman Kerja</td>
-    <td colspan="3">Nilai Ujian</td>
-    <td rowspan="2" class="tableBottom">Hasil</td>
-  </tr>
-  <tr>
-    <td>Nilai Ujian</td>
-    <td>Psikotes</td>
-    <td>Wawancara</td>
-  </tr>
-  <tr>
-    <td><=3</td>
-    <td>Ada</td>
-    <td><=7</td>
-    <td><=7</td>
-    <td class="tableLeft">Baik</td>
-    <td class="tableLeft">Lulus</td>
-  </tr>
-  <tr>
-    <td><=3</td>
-    <td>Tidak Ada</td>
-    <td><=7</td>
-    <td><=7</td>
-    <td class="tableLeft">Baik</td>
-    <td class="tableLeft">Lulus</td>
-  </tr>
-  <tr>
-    <td><=2.7</td>
-    <td>Ada</td>
-    <td><=7</td>
-    <td><=7</td>
-    <td class="tableLeft">Baik</td>
-    <td class="tableLeft">Lulus</td>
-  </tr>
-  <tr>
-    <td><=2.7</td>
-    <td>Tidak Ada</td>
-    <td><=7</td>
-    <td><=7</td>
-    <td class="tableLeft">Baik</td>
-    <td class="tableLeft">Cadangan</td>
-  </tr>
-  <tr>
-    <td colspan="5">Selain dari nilai diatas</td>
-    <td class="tableLeft">Tidak Lulus</td>
-  </tr>
-</table>
-
-###########################################################################################################################################################################################
-
-Source Code CSS :
-
-table{
-  border-collapse: collapse;
-  text-align: center;
-  width: 70%;
+      <details class="fold">
+        <summary>Lihat source code HTML &amp; CSS</summary>
+        <div class="two">
+          <div class="code">
+            <div class="bar"><span>index.html</span><button class="copy" type="button">Salin</button></div>
+<pre><span class="t">&lt;table</span> <span class="a">border</span>=<span class="s">"1"</span><span class="t">&gt;</span>
+  <span class="t">&lt;tr&gt;</span>
+    <span class="t">&lt;th</span> <span class="a">colspan</span>=<span class="s">"6"</span><span class="t">&gt;</span>PENENTUAN KELULUSAN<span class="t">&lt;/th&gt;</span>
+  <span class="t">&lt;/tr&gt;</span>
+  <span class="t">&lt;tr&gt;</span>
+    <span class="t">&lt;td</span> <span class="a">rowspan</span>=<span class="s">"2"</span> <span class="a">class</span>=<span class="s">"tableBottom"</span><span class="t">&gt;</span>IPK<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td</span> <span class="a">rowspan</span>=<span class="s">"2"</span> <span class="a">class</span>=<span class="s">"tableBottom"</span><span class="t">&gt;</span>Pengalaman Kerja<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td</span> <span class="a">colspan</span>=<span class="s">"3"</span><span class="t">&gt;</span>Nilai Ujian<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td</span> <span class="a">rowspan</span>=<span class="s">"2"</span> <span class="a">class</span>=<span class="s">"tableBottom"</span><span class="t">&gt;</span>Hasil<span class="t">&lt;/td&gt;</span>
+  <span class="t">&lt;/tr&gt;</span>
+  <span class="t">&lt;tr&gt;</span>
+    <span class="t">&lt;td&gt;</span>Nilai Ujian<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td&gt;</span>Psikotes<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td&gt;</span>Wawancara<span class="t">&lt;/td&gt;</span>
+  <span class="t">&lt;/tr&gt;</span>
+  <span class="t">&lt;tr&gt;</span>
+    <span class="t">&lt;td&gt;</span>&lt;=3<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td&gt;</span>Ada<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td&gt;</span>&lt;=7<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td&gt;</span>&lt;=7<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td</span> <span class="a">class</span>=<span class="s">"tableLeft"</span><span class="t">&gt;</span>Baik<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td</span> <span class="a">class</span>=<span class="s">"tableLeft"</span><span class="t">&gt;</span>Lulus<span class="t">&lt;/td&gt;</span>
+  <span class="t">&lt;/tr&gt;</span>
+  <span class="c">&lt;!-- ... baris lainnya sama polanya ... --&gt;</span>
+  <span class="t">&lt;tr&gt;</span>
+    <span class="t">&lt;td</span> <span class="a">colspan</span>=<span class="s">"5"</span><span class="t">&gt;</span>Selain dari nilai diatas<span class="t">&lt;/td&gt;</span>
+    <span class="t">&lt;td</span> <span class="a">class</span>=<span class="s">"tableLeft"</span><span class="t">&gt;</span>Tidak Lulus<span class="t">&lt;/td&gt;</span>
+  <span class="t">&lt;/tr&gt;</span>
+<span class="t">&lt;/table&gt;</span></pre>
+          </div>
+          <div class="code">
+            <div class="bar"><span>style.css</span><button class="copy" type="button">Salin</button></div>
+<pre><span class="t">table</span> {
+  <span class="a">border-collapse</span>: <span class="s">collapse</span>;
+  <span class="a">text-align</span>: <span class="s">center</span>;
+  <span class="a">width</span>: <span class="s">70%</span>;
 }
 
-.tableBottom{
-  padding-top: 22px;
+<span class="t">.tableBottom</span> {
+  <span class="a">padding-top</span>: <span class="s">22px</span>;
 }
 
-.tableLeft{
-  text-align: left;
-}
+<span class="t">.tableLeft</span> {
+  <span class="a">text-align</span>: <span class="s">left</span>;
+}</pre>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
 
-###########################################################################################################################################################################################
-</xmp>
-<div class="gabungan">
-<h2>SELAMAT DATANG PESERTA UJIAN KEPEGAWAIAN</h2>
-<h3>PERIKSA KARTU UJIAN ANDA DAN ALAT TULIS ANDA</h3>
-</div>
-<xmp>
-###########################################################################################################################################################################################
+  <!-- 05 PHP -->
+  <section class="section" id="php">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="num">05</span>
+        <div>
+          <h2>Variabel di PHP</h2>
+          <p>Menyusun HTML dari variabel dengan <code>echo</code>.</p>
+        </div>
+      </div>
+      <div class="two">
+        <div class="demo">
+          <div class="label">Hasil tampilan</div>
+          <h2>SELAMAT DATANG PESERTA UJIAN KEPEGAWAIAN</h2>
+          <h3>PERIKSA KARTU UJIAN ANDA DAN ALAT TULIS ANDA</h3>
+        </div>
+        <div class="code">
+          <div class="bar"><span>index.php</span><button class="copy" type="button">Salin</button></div>
+<pre><span class="t">&lt;?php</span>
+<span class="a">$text_satu</span>    = <span class="s">"SELAMAT DATANG PESERTA UJIAN KEPEGAWAIAN"</span>;
+<span class="a">$text_dua</span>     = <span class="s">"PERIKSA KARTU UJIAN ANDA DAN ALAT TULIS ANDA"</span>;
+<span class="a">$jFont</span>        = <span class="s">"arial"</span>;
+<span class="a">$tAlign</span>       = <span class="s">"center"</span>;
+<span class="a">$warna_kesatu</span> = <span class="s">"red"</span>;
+<span class="a">$warna_kedua</span>  = <span class="s">"green"</span>;
 
-<?php  
-$text_satu    = "SELAMAT DATANG PESERTA UJIAN KEPEGAWAIAN";
-$text_dua     = "PERIKSA KARTU UJIAN ANDA DAN ALAT TULIS ANDA";
-$jFont        = "arial";
-$tAlign       = "center";
-$warna_kesatu = "red";
-$warna_kedua  = "green";
+<span class="k">echo</span> <span class="s">"&lt;div style='text-align: $tAlign; font-family: $jFont;'&gt;"</span>;
+<span class="k">echo</span> <span class="s">"&lt;br&gt;"</span>;
+<span class="k">echo</span> <span class="s">"&lt;h2 style='color: $warna_kesatu'&gt;$text_satu&lt;/h2&gt;"</span>;
+<span class="k">echo</span> <span class="s">"&lt;br&gt;"</span>;
+<span class="k">echo</span> <span class="s">"&lt;h3 style='color: $warna_kedua'&gt;$text_dua&lt;/h3&gt;"</span>;
+<span class="k">echo</span> <span class="s">"&lt;br&gt;"</span>;
+<span class="k">echo</span> <span class="s">"&lt;/div&gt;"</span>;
+<span class="t">?&gt;</span></pre>
+        </div>
+      </div>
+    </div>
+  </section>
 
-echo "<div style='text-align: $tAlign; font-family: $jFont;'>";
-echo "<br>";
-echo "<h2 style='color: $warna_kesatu'>$text_satu</h2>";
-echo "<br>";
-echo "<h3 style='color: $warna_kedua'>$text_dua</h3>";
-echo "<br>";
-echo "</div>";
-?>
+  <!-- 06 Grid system -->
+  <section class="section" id="grid">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="num">06</span>
+        <div>
+          <h2>Grid System Bootstrap</h2>
+          <p>Mengatur lebar komponen agar website responsif.</p>
+        </div>
+      </div>
+      <p class="intro">Grid System adalah sistem pengaturan lebar untuk masing-masing komponen yang ingin kita buat. Pengaturan ini bertujuan untuk mengatur ke-responsif-an website yang kita bangun. Beberapa class dasar Bootstrap untuk mengatur grid:</p>
+      <div class="grid">
+        <article class="card">
+          <h3><span class="badge teal">*</span> <code>.col-*</code></h3>
+          <p>Mengatur grid secara otomatis untuk semua ukuran layar.</p>
+        </article>
+        <article class="card">
+          <h3><span class="badge teal">sm</span> <code>.col-sm-*</code></h3>
+          <p>Untuk ukuran layar yang berukuran kecil (&ge; 576 px).</p>
+        </article>
+        <article class="card">
+          <h3><span class="badge teal">md</span> <code>.col-md-*</code></h3>
+          <p>Untuk ukuran layar yang berukuran sedang (&ge; 720 px).</p>
+        </article>
+        <article class="card">
+          <h3><span class="badge teal">lg</span> <code>.col-lg-*</code></h3>
+          <p>Untuk ukuran layar yang berukuran besar (&ge; 992 px).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
 
-###########################################################################################################################################################################################
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year"></span> Bayu Apriansah · NPM 17351117</span>
+    <span><a href="https://github.com/bayuapriansah/bayuapriansah.github.io" target="_blank" rel="noopener">Source di GitHub</a></span>
+  </div>
+</footer>
 
-Grid System adalah sistem pengaturan lebar untuk masing-masing komponen yang ingin kita buat. Pengaturan ini bertujuan untuk mengatur ke-reponsivean
-website yang kita bangun.
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
 
-Beberapa jenis class dasar dari bootstrap untuk mengatur grid diantaranya :
-1. .col-*
-Fungsi ini digunakan untuk mengatur grid secara otomatis
-2. .col-sm-*
-Fungsi ini untuk mengatur pada ukuran layar monitor yang berukuran kecil (>=576 px)
-3. .col-md-*
-Fungsi ini untuk mengatur pada ukuran layar monitor yang berukuran sedang (>=720 px)
-4. .col-lg-*
-Fungsi ini untuk mengatur pada ukuran layar monitor yang berukuran besar (>=992 px)
+  // tema terang / gelap
+  document.getElementById("themeBtn").addEventListener("click", function () {
+    var root = document.documentElement;
+    var cur = root.getAttribute("data-theme");
+    if (!cur) cur = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    var next = cur === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
 
-###########################################################################################################################################################################################
-</xmp>
+  // tombol salin kode
+  document.querySelectorAll(".copy").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var pre = btn.closest(".code").querySelector("pre");
+      navigator.clipboard.writeText(pre.innerText).then(function () {
+        btn.textContent = "Tersalin";
+        setTimeout(function () { btn.textContent = "Salin"; }, 1500);
+      });
+    });
+  });
+
+  // highlight menu sesuai posisi scroll
+  var links = document.querySelectorAll('.nav a[href^="#"]');
+  var targets = Array.prototype.map.call(links, function (a) { return document.querySelector(a.getAttribute("href")); });
+  window.addEventListener("scroll", function () {
+    var y = window.scrollY + 120, idx = 0;
+    targets.forEach(function (t, i) { if (t && t.offsetTop <= y) idx = i; });
+    links.forEach(function (a, i) { a.classList.toggle("active", i === idx); });
+  }, { passive: true });
+</script>
 </body>
 </html>
